@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>100SMILES Dental Care - Book Appointment</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1 class="HeadName">100SMILES Dental Care</h1>
+
+      <!-- Hidden checkbox for toggle menu -->
+      <input type="checkbox" id="navToggle" class="nav-checkbox" />
+
+      <!-- 3-dot menu icon -->
+      <label for="navToggle" class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Navigation Menu -->
+      <nav>
+        <ul id="navMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="staff.html">Staff</a></li>
+          <li><a href="announcements.html">Announcements</a></li>
+          <li><a href="book.html">Appointment</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Appointment Form -->
+    <section class="appointment">
+      <h2>Book Your Appointment</h2>
+      <form id="appointmentForm">
+        <label for="name">Full Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name here"
+          required
+        />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@gmail.com"
+          required
+        />
+
+        <label for="phone">Phone</label>
+        <input
+          type="text"
+          id="phone"
+          name="phone"
+          placeholder="0123456789"
+          required
+        />
+
+        <label for="date">Preferred Date</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="time">Preferred Time</label>
+        <input type="time" id="time" name="time" required />
+
+        <label for="message">Additional Message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          placeholder="Any special requests?"
+        ></textarea>
+
+        <button type="submit">Book Appointment</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 100SMILES Dental Care. All rights reserved.</p>
+      <p>Email: admin@100smilesdentalcare.com.au | Phone: 07 5000 5599</p>
+
+      <ul class="footer-nav">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
